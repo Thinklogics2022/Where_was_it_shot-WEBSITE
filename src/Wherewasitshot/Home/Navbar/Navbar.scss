@@ -1,0 +1,29 @@
+.navbar {
+  padding: 15px;
+  font-weight: 550;
+  .nav-item {
+    padding: 4px;
+    .navIcon {
+      color: blue;
+    }
+  }
+}
+
+
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+
+@media (max-width: $small-screen) {
+    .navbar {
+        padding: 6px;
+        .logo_icon{
+            width: 180px;
+            height: 40px;
+        }
+}
+.w-100 {
+    width: 100%!important;
+    height: 230px;
+}
+}

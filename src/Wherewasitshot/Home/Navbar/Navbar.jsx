@@ -1,18 +1,26 @@
 import React from "react";
-import "./Home.css";
+import "./Navbar.scss";
 import HomeIcon from "@mui/icons-material/Home";
 import TheatersIcon from "@mui/icons-material/Theaters";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import Logo from "../../Images/update logo.png";
 
-const Home = () => {
+const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-fluid">
           <a className="navbar-brand me-auto" href="#">
-            Navbar
+            <img
+              src={Logo}
+              alt="Where was it shot"
+              className="logo_icon"
+              width="240"
+              height="50"
+              style={{ paddingLeft: "3px" }}
+            />
           </a>
           <button
             className="navbar-toggler"
@@ -29,41 +37,52 @@ const Home = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  <b> Home</b> <HomeIcon className="navIcon" style={{ fontSize: '16px' }}/>
+                  Home{" "}
+                  <HomeIcon className="navIcon" style={{ fontSize: "16px" }} />
                 </a>
               </li>
 
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  <b> Movies</b> <TheatersIcon className="navIcon" style={{ fontSize: '14px' }}/>
+                  Movies{" "}
+                  <TheatersIcon
+                    className="navIcon"
+                    style={{ fontSize: "14px" }}
+                  />
                 </a>
               </li>
 
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  <b> Locations</b> <LocationOnIcon className="navIcon" style={{ fontSize: '16px' }}/>
+                  Locations{" "}
+                  <LocationOnIcon
+                    className="navIcon"
+                    style={{ fontSize: "16px" }}
+                  />
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  <b> About</b> <InfoIcon className="navIcon"  style={{ fontSize: '14px' }}/>
+                  About{" "}
+                  <InfoIcon className="navIcon" style={{ fontSize: "14px" }} />
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item contact">
                 <a className="nav-link active" aria-current="page" href="#">
-                  <b> Contact</b> <ContactMailIcon className="navIcon" style={{ fontSize: '15px' }}/>
+                  Contact{" "}
+                  <ContactMailIcon
+                    className="navIcon"
+                    style={{ fontSize: "15px" }}
+                  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <div classNameName="good">hii</div>
-
     </div>
   );
 };
 
-export default Home;
+export default Navbar;
