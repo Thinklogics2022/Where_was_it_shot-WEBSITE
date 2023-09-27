@@ -71,7 +71,29 @@ $large-screen: 992px;
 
     .search-bar a.search-button {
       padding: 5px 25px;
-      border-radius: 5px;
+      // border-radius: 5px;
+      margin-top: 10px;
+      font-size: 9px;
+    }
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .carousel {
+    .explore-text {
+      margin-bottom: 40px;
+      font-size: 19px;
+      // padding-bottom: 55px;
+    }
+    .search-bar input[type="text"] {
+      padding: 5px;
+      width: 200px;
+      font-size: 9px;
+      padding-left: 18px;
+    }
+
+    .search-bar a.search-button {
+      padding: 5px 25px;
       margin-top: 10px;
       font-size: 9px;
     }
