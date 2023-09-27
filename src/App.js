@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './Wherewasitshot/Home/Home';
-
+import Carousel from './Wherewasitshot/Home/Carousel';
+import Navbar from './Wherewasitshot/Home/Navbar/Navbar';
 function App() {
   return (
     <div className="App">
-     <Home/>
+     <Carousel/>
     </div>
   );
 }
